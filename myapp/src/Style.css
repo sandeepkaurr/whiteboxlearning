@@ -57,10 +57,16 @@ ul li .logo {
   right: -400px;
   margin: 5px;
   background-color: purple;
+  border: 1px solid white;
 
   width: 85px;
   height: 40px;
+  transition: background-color 2s;
 }
+.btn:hover {
+  background-image: radial-gradient(Lavender, blue);
+}
+
 .slider {
   margin-top: -80px;
 }
@@ -91,9 +97,13 @@ p {
   display: grid;
 
   grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+
   gap: 60px; /* Space between columns */
   padding: 20px;
 }
+.grid-item-2 {
+}
+
 .info {
   position: relative;
   top: -40px;
@@ -130,4 +140,164 @@ p {
 }
 .main {
   margin-top: -50px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 25px;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1;
+  max-width: 400px;
+  border: 1px solid grey;
+  transition: transform 2s;
+}
+.card:hover {
+  transform: translate(0px, 10px);
+}
+.card-image {
+  width: 100%;
+  height: 300px;
+}
+.card-content a {
+  font-size: larger;
+  text-decoration: none;
+}
+.box {
+  background-color: aliceblue;
+  margin: 20px;
+  margin-top: 100px;
+}
+.box h1 {
+  padding: 70px;
+  font-size: 45px;
+}
+.box p {
+  margin-top: -80px;
+  font-size: 20px;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.grid-column {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+  text-align: left; /* Align text within the elements to the left */
+  padding: 20px;
+  /* border: 1px solid #ddd;  */
+}
+.h22 {
+  margin-left: 1px;
+  text-align: left;
+  margin-top: 30px;
+}
+.faqheading {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.acc {
+  border: 1px solid grey;
+
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: left;
+  font-size: larger;
+  color: blue;
+}
+.acc content {
+  color: black;
+}
+.contactbox {
+  border: 1px solid grey;
+  /* border-radius: 50%; */
+  width: 300px;
+  height: auto;
+  margin-left: 400px;
+  background-image: linear-gradient(200deg, pink, rgba(80, 80, 83, 80));
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: -30px -30px 5px 10px plum;
+  transform: rotate(-5deg);
+}
+.label {
+  margin-left: -160px;
+}
+.input {
+  width: 200px;
+  height: 40px;
+}
+.contbox {
+  display: flex;
+  justify-content: center;
+}
+.contbtn {
+  margin: 5px;
+  height: 30px;
+  width: 60px;
+  background-image: conic-gradient(white, grey, purple);
+
+  transition: background-image 4s;
+}
+.contbtn:hover {
+  background-image: linear-gradient(white, pink);
+}
+.infobox {
+  background-image: linear-gradient(200deg, pink, rgba(80, 80, 83, 80));
+  width: 400px;
+
+  position: relative;
+  left: 850px;
+  bottom: 500px;
+  text-align: left;
+}
+.cp {
+  color: rgb(0, 0, 255);
+}
+.ch4 {
+  margin-left: 20px;
+}
+.ch2 {
+  margin-left: 50px;
+}
+.spacer {
+  position: relative;
+  bottom: 30px;
+}
+.schbtn {
+  margin: 5px;
+  background-color: blue;
+  border: 1px solid white;
+  position: relative;
+  right: 550px;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+
+  color: white;
+}
+.table {
+  position: relative;
+  left: 200px;
+  top: -50px;
+  padding: 5px;
+}
+.thead {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+}
+.table th {
+  padding: 15px;
+}
+.table td {
+  padding: 5px;
 }
